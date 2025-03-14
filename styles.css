@@ -5,6 +5,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    cursor: url('arrowhead.png'), auto;
 }
 
 .sidebar {
