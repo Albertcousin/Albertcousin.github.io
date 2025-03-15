@@ -58,7 +58,7 @@ p {
 
 .social-icons {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 5px; /* Add spacing between the icons */
     margin-top: 20px;
 }
