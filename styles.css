@@ -46,12 +46,6 @@ p {
     border-radius: 5px;
 }
 
-.social-icons {
-    display: flex;
-    gap: 5px;
-    margin-top: 20px;
-}
-
 .icon {
     color: lightgrey;
     text-decoration: none;
