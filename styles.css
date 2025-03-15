@@ -74,7 +74,7 @@ p {
 }
 
 .social-icon:hover {
-    filter: brightness(0) invert(1); /* Makes the image appear white on hover */
+    filter: brightness(0) invert(1) !important; /* Makes the image appear white on hover */
 }
 
 #brighter-icon {
