@@ -50,6 +50,7 @@ p {
     display: flex;
     justify-content: space-around; /* Space out the icons evenly */
     gap: 5px; /* Add spacing between the icons */
+    margin-top: 20px;
 }
 
 .icon {
