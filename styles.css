@@ -17,7 +17,7 @@ body {
     height: 100vh;
     position: fixed;
     background-color: rgb(16, 72, 131);
-    padding: 40px;
+    padding: 60px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column; 
@@ -40,10 +40,12 @@ h1 {
 
 h2 {
     font-size: 18px;
+    font-weight: normal;
 }
 
 p {
-    font-size: 16px;
+    font-size: 14px;
+    color:lightgray;
 }
 
 .experience {
