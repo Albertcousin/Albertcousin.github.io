@@ -15,7 +15,7 @@ body {
     background-color: rgb(16, 72, 131);
     padding: 20px;
     box-sizing: border-box;
-    margin-left: 30px;
+    margin-left: 50px;
 }
 
 .content {
@@ -47,7 +47,7 @@ p {
 
 .social-icons {
     display: flex;
-    gap: 10px;
+    gap: 5px;
     margin-top: 20px;
 }
 
