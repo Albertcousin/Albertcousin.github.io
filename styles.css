@@ -59,3 +59,19 @@ p {
 .icon:hover {
     color: white;
 }
+
+.social-icons {
+    display: flex;
+    justify-content: space-around; /* Space out the icons evenly */
+    gap: 20px; /* Add spacing between the icons */
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    transition: filter 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+.social-icon:hover {
+    filter: brightness(0) invert(1); /* Makes the image appear white on hover */
+}
