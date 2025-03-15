@@ -76,3 +76,7 @@ p {
 .social-icon:hover {
     filter: brightness(0) invert(1); /* Makes the image appear white on hover */
 }
+
+#brighter-icon {
+    filter: brightness(1.1); /* Adjust brightness only for this icon */
+}
