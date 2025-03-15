@@ -1,7 +1,11 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: rgb(16, 72, 131);
     color: white;
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
@@ -35,18 +39,36 @@ h1 {
 }
 
 h2 {
-    font-size: 24px;
-}
-
-p {
     font-size: 18px;
 }
 
+p {
+    font-size: 16px;
+}
+
 .experience {
-    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(16, 72, 131);
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
+}
+
+.experience:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.experience-content {
+    display: flex;
+    align-items: flex-start;
+}
+
+.date {
+    font-size: 14px;
+    color: lightgray;
+    min-width: 180px; /* Adjust as needed */
+    text-align: left;
 }
 
 .icon {
@@ -80,3 +102,8 @@ p {
 #brighter-icon {
     filter: brightness(1.2); /* Adjust brightness only for this icon */
 }
+
+.description {
+    color: lightgray;
+}
+
