@@ -29,7 +29,7 @@ body {
 .content {
     margin-left: 40%;
     width: 60%;
-    padding: 20px;
+    padding: 40px;
     box-sizing: border-box;
     overflow-y: auto;
 }
