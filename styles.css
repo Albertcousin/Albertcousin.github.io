@@ -12,9 +12,10 @@ body {
     width: 40%;
     height: 100vh;
     position: fixed;
-     background-color: rgb(16, 72, 131);
+    background-color: rgb(16, 72, 131);
     padding: 20px;
     box-sizing: border-box;
+    margin-left: 30px;
 }
 
 .content {
@@ -63,7 +64,7 @@ p {
 .social-icons {
     display: flex;
     justify-content: space-around; /* Space out the icons evenly */
-    gap: 20px; /* Add spacing between the icons */
+    gap: 10px; /* Add spacing between the icons */
 }
 
 .social-icon {
