@@ -46,16 +46,16 @@ p {
     border-radius: 5px;
 }
 
-.icon {
-    color: lightgrey;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
 .social-icons {
     display: flex;
     justify-content: space-around; /* Space out the icons evenly */
     gap: 5px; /* Add spacing between the icons */
+}
+
+.icon {
+    color: lightgrey;
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
 .icon:hover {
