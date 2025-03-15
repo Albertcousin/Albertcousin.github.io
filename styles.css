@@ -48,8 +48,7 @@ p {
 
 .social-icons {
     display: flex;
-    /*justify-content: space-around;  Space out the icons evenly */
-    gap: 5px; /* Add spacing between the icons */
+    gap: 5px;
     margin-top: 20px;
 }
 
@@ -61,6 +60,12 @@ p {
 
 .icon:hover {
     color: white;
+}
+
+.social-icons {
+    justify-content: space-around;
+    gap: 5px; /* Add spacing between the icons */
+    margin-top: 20px;
 }
 
 .social-icon {
