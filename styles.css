@@ -16,6 +16,7 @@ body {
     padding: 20px;
     box-sizing: border-box;
     margin-left: 50px;
+    margin-right: 50px;
 }
 
 .content {
@@ -45,12 +46,6 @@ p {
     border-radius: 5px;
 }
 
-.social-icons {
-    display: flex;
-    gap: 5px;
-    margin-top: 20px;
-}
-
 .icon {
     color: lightgrey;
     text-decoration: none;
@@ -64,7 +59,7 @@ p {
 .social-icons {
     display: flex;
     justify-content: space-around; /* Space out the icons evenly */
-    gap: 10px; /* Add spacing between the icons */
+    gap: 5px; /* Add spacing between the icons */
 }
 
 .social-icon {
