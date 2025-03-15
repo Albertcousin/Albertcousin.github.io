@@ -52,14 +52,14 @@ p {
     transition: color 0.3s;
 }
 
-.icon:hover {
-    color: white;
-}
-
 .social-icons {
     display: flex;
     justify-content: space-around; /* Space out the icons evenly */
     gap: 5px; /* Add spacing between the icons */
+}
+
+.icon:hover {
+    color: white;
 }
 
 .social-icon {
