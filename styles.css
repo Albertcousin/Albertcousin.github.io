@@ -78,5 +78,5 @@ p {
 }
 
 #brighter-icon {
-    filter: brightness(1.1); /* Adjust brightness only for this icon */
+    filter: brightness(1.2); /* Adjust brightness only for this icon */
 }
