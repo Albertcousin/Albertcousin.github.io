@@ -15,6 +15,7 @@ body {
     background-color: rgb(16, 72, 131);
     padding: 40px;
     box-sizing: border-box;
+    display: flex;
     flex-direction: column; 
     justify-content: space-between;
     /*margin-left: 50px;
