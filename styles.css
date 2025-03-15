@@ -60,7 +60,8 @@ p {
     display: flex;
     justify-content: space-around;
     /*gap: 5px;  Add spacing between the icons */
-    margin-top: 20px;
+    margin-top: auto;
+    margin-bottom: 20px;
 }
 
 .social-icon {
