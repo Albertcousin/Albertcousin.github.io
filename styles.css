@@ -22,12 +22,11 @@ body {
     display: flex;
     flex-direction: column; 
     justify-content: space-between;
-    /*margin-left: 50px;
-    margin-right: 50px;*/
 }
 
 .content {
     margin-left: 40%;
+    margin-top: 40px;
     width: 60%;
     padding: 40px;
     box-sizing: border-box;
@@ -52,13 +51,14 @@ p {
     display: flex;
     flex-direction: column;
     background-color: rgb(16, 72, 131);
-    padding: 10px;
-    margin-bottom: 10px;
+    padding: 5px;
     border-radius: 5px;
+   
 }
 
 .experience:hover {
     background-color: rgba(255, 255, 255, 0.1);
+    
 }
 
 .experience-content {
@@ -109,3 +109,60 @@ p {
     color: lightgray;
 }
 
+.nav-links {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-links a {
+    position: relative;
+    display: inline-block;
+    color: lightgray;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    text-decoration: none;
+    width: fit-content;
+    padding-left: 20px;
+    transition: padding-left 0.3s ease; 
+}
+
+.nav-links a:hover {
+    cursor: pointer;
+    filter: brightness(0) invert(1);
+    padding-left: 55px; /* Increase left padding to push text right */
+  }
+
+
+  .nav-links a::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 15px; /* Initial width of the bar */
+    height: 1px; /* Height of the horizontal bar */
+    background-color: lightgray;
+    transition: width 0.3s ease, left 0.3s ease; /* Smooth transition for width and position */
+}
+
+.nav-links a:hover::before {
+    width: 40px; /* Expanded width of the bar on hover */
+    left: 10px; /* Move the bar right to maintain spacing */
+}
+
+.profile-image {   
+    margin-left: 50px;
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%; /* This creates the circular shape */
+    object-fit: cover; /* Ensures the image covers the entire area without distortion */
+    margin-top: 40px
+}
+
+.profile-container {
+    display: flex;
+    align-items: center; /* Vertically centers the content */
+    margin-top: -30px;
+}
