@@ -9,7 +9,19 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    /*cursor: none; */
     cursor: url('static/arrowhead.png'), auto;
+}
+
+.custom-cursor {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    pointer-events: none;
+    mix-blend-mode: overlay; /* Ensures the cursor blends with underlying content */
+    transition: transform 0.1s ease-out;
 }
 
 .sidebar {
@@ -48,17 +60,17 @@ p {
 }
 
 .experience {
+    position: relative;
     display: flex;
     flex-direction: column;
     background-color: rgb(16, 72, 131);
     padding: 5px;
     border-radius: 5px;
-   
 }
 
 .experience:hover {
     background-color: rgba(255, 255, 255, 0.1);
-    
+    border-top: 2px solid rgb(29, 115, 201);
 }
 
 .experience-content {
@@ -66,11 +78,32 @@ p {
     align-items: flex-start;
 }
 
+.experience:hover .experience-details h2 {
+    color: #5CDC95;
+}
+
+.arrow-icon {
+    position: absolute;
+    width: 23px; /* Initial width */
+    height: 23px; /* Initial height */
+    opacity: 0; /* Initially hidden */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.experience:hover .arrow-icon {
+    opacity: 1; /* Show arrow */
+    transform: translate(5px, -5px); /* Move arrow slightly to the top-right */
+}
+
 .date {
     font-size: 14px;
     color: lightgray;
     min-width: 180px; /* Adjust as needed */
     text-align: left;
+}
+
+.date-image {
+    margin-top: 10px; /* Space between text and image */
 }
 
 .icon {
@@ -150,6 +183,7 @@ p {
 .nav-links a:hover::before {
     width: 40px; /* Expanded width of the bar on hover */
     left: 10px; /* Move the bar right to maintain spacing */
+    filter: brightness(0) invert(1);
 }
 
 .profile-image {   
@@ -158,7 +192,8 @@ p {
     height: 150px; 
     border-radius: 50%; /* This creates the circular shape */
     object-fit: cover; /* Ensures the image covers the entire area without distortion */
-    margin-top: 40px
+    margin-top: 40px;
+    border: 1px solid white;
 }
 
 .profile-container {
