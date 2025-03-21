@@ -14,3 +14,15 @@ document.addEventListener('mousemove', (e) => {
     halo.style.left = `${e.pageX - 75}px`;
     halo.style.top = `${e.pageY - 75}px`;
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const experiences = document.querySelectorAll('.experience');
+    experiences.forEach(function(experience) {
+        experience.addEventListener('click', function() {
+            const url = this.getAttribute('data-url');
+            if (url) {
+                window.open(url, '_blank');
+            }
+        });
+    });
+});
