@@ -38,7 +38,7 @@ body {
 
 .content {
     margin-left: 40%;
-    margin-top: 40px;
+    margin-top: 60px;
     width: 60%;
     padding: 40px;
     box-sizing: border-box;
@@ -66,6 +66,7 @@ p {
     background-color: rgb(16, 72, 131);
     padding: 5px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .experience:hover {
@@ -185,6 +186,102 @@ p {
     left: 10px; /* Move the bar right to maintain spacing */
     filter: brightness(0) invert(1);
 }
+.nav-links a:hover {
+    cursor: pointer;
+    filter: brightness(0) invert(1);
+    padding-left: 55px; /* Increase left padding to push text right */
+  }
+
+
+  .nav-links a::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 15px; /* Initial width of the bar */
+    height: 1px; /* Height of the horizontal bar */
+    background-color: lightgray;
+    transition: width 0.3s ease, left 0.3s ease; /* Smooth transition for width and position */
+}
+
+.nav-links a:hover::before {
+    width: 40px; /* Expanded width of the bar on hover */
+    left: 10px; /* Move the bar right to maintain spacing */
+    filter: brightness(0) invert(1);
+}
+.nav-links a:hover {
+    cursor: pointer;
+    filter: brightness(0) invert(1);
+    padding-left: 55px; /* Increase left padding to push text right */
+  }
+
+
+  .nav-links a::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 15px; /* Initial width of the bar */
+    height: 1px; /* Height of the horizontal bar */
+    background-color: lightgray;
+    transition: width 0.3s ease, left 0.3s ease; /* Smooth transition for width and position */
+}
+
+.nav-links a:hover::before {
+    width: 40px; /* Expanded width of the bar on hover */
+    left: 10px; /* Move the bar right to maintain spacing */
+    filter: brightness(0) invert(1);
+}
+.nav-links a:hover {
+    cursor: pointer;
+    filter: brightness(0) invert(1);
+    padding-left: 55px; /* Increase left padding to push text right */
+  }
+
+
+  .nav-links a::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 15px; /* Initial width of the bar */
+    height: 1px; /* Height of the horizontal bar */
+    background-color: lightgray;
+    transition: width 0.3s ease, left 0.3s ease; /* Smooth transition for width and position */
+}
+
+.nav-links a:hover::before {
+    width: 40px; /* Expanded width of the bar on hover */
+    left: 10px; /* Move the bar right to maintain spacing */
+    filter: brightness(0) invert(1);
+}
+.nav-links a:hover {
+    cursor: pointer;
+    filter: brightness(0) invert(1);
+    padding-left: 55px; /* Increase left padding to push text right */
+  }
+
+
+  .nav-links a::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 15px; /* Initial width of the bar */
+    height: 1px; /* Height of the horizontal bar */
+    background-color: lightgray;
+    transition: width 0.3s ease, left 0.3s ease; /* Smooth transition for width and position */
+}
+
+.nav-links a:hover::before {
+    width: 40px; /* Expanded width of the bar on hover */
+    left: 10px; /* Move the bar right to maintain spacing */
+    filter: brightness(0) invert(1);
+}
 
 .profile-image {   
     margin-left: 50px;
@@ -200,4 +297,10 @@ p {
     display: flex;
     align-items: center; /* Vertically centers the content */
     margin-top: -30px;
+}
+
+#publications,
+#experience,
+#education {
+    scroll-margin-top: 120px;
 }
